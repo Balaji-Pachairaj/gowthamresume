@@ -24,26 +24,40 @@
     background-size: cover;
     
    }
-   @media only screen and (min-width: 375px) {
+   @media only screen and (min-width: 768px) {
   /* General adjustments */
+  h1, h2 {
+    font-size: 20px; /* Reduce header sizes */
+  }
   .one {
-    flex-direction: column;
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+    margin: 20px; /* Reduce margin for tighter space */
   }
   .three {
-    margin: 10px;
-    width: 100%;
-  }
-  h1, h2 {
-    font-size: 20px;
+    width: calc(50% - 10px); /* Half the width with gutter */
+    margin: 5px; /* Reduce margin for spacing */
   }
 
-  /* Specific adjustments for elements */
-  .gow img {
-    width: 80%;
-    height: auto;
+  /* Tamil Books section */
+  .gow a,
+  .gow p {
+    font-size: 14px; /* Smaller text for better readability */
   }
-  p {
-    font-size: 14px;
+
+  /* English Books section */
+  .gow a,
+  .gow p {
+    font-size: 14px; /* Smaller text for better readability */
+  }
+
+  /* Tamil Poetry Books section */
+  .three img {
+    width: 100%; /* Scale image to fit content area */
+  }
+
+  /* English Poetry Books section */
+  .three img {
+    width: 100%; /* Scale image to fit content area */
   }
 }
    
